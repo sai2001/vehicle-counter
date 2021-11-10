@@ -61,5 +61,11 @@ while True:
 
     if cv2.waitKey(1)== 13:
         break
+if counter>100:
+    print('\nwait: 250sec')
+elif counter>50:
+    print('\nwait: 120ssec')
+else:
+    print('\nwait: 50sec')
 cv2.destroyAllWindows()
 cap.release()
